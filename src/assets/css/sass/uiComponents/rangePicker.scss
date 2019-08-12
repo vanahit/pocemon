@@ -1,0 +1,125 @@
+.react-daterange-picker {
+    width: 100%;
+   
+    
+}
+.react-daterange-picker {
+    width: 100%;
+}
+.react-calendar {
+    width: 100%;
+    background: white;
+}
+.react-daterange-picker__calendar {
+    width: 100%;
+    font-family: inherit;
+    font-size: 1rem !important;
+}
+
+.react-daterange-picker__wrapper {
+    display: flex;
+    justify-content: flex-start !important;
+    width: 100%;
+    box-shadow: initial !important;
+    font-size: 0.8rem;
+    padding: 0.6rem 0.75rem;
+    border-radius: 5px;
+    line-height: 1.5;
+    border: 1px solid #ebedf2 !important;
+    background: white;
+    color: #495057 !important;
+    font-weight: 400;
+  
+}
+.react-daterange-picker__inputGroup {
+    min-width: calc((4px * 3) +  0.217em * 2) !important;
+    .react-daterange-picker__inputGroup__day {
+        min-width: 1.2em;
+    }
+    .react-daterange-picker__inputGroup__year {
+        min-width: 2.2em;
+    }
+    .react-daterange-picker__inputGroup__month {
+        min-width: 1em;
+    }
+    flex-grow: 0
+}
+.react-calendar__tile--active {
+    background: #00b3bb !important;
+    &:hover {
+        background: rgba(0, 179, 187, 0.7) !important;
+    }
+}
+.react-daterange-picker__button:active {
+    svg {
+        width: 16px;
+        stroke-width: 1;
+        g {
+            stroke: rgba(100, 108, 154, 0.7);
+        }      
+    }
+}
+.react-daterange-picker__button:enabled {
+    top: 45%;
+    transform: translateY(-50%);
+    svg {
+        width: 16px;
+        stroke-width: 1;
+        g {
+            stroke:  rgba(100, 108, 154, 0.7);
+        }      
+    }
+    &:hover {
+        svg {
+            g {
+                stroke:  rgba(100, 108, 154, 0.7);
+            }         
+        }
+    }
+}
+.react-daterange-picker__clear-button {
+    position: absolute;
+    width: 10px;
+    right: 50px;
+    &:focus {
+        svg {
+            g {
+                stroke:  rgba(100, 108, 154, 0.7) !important;
+            }         
+        }
+    }
+    &:hover {
+        svg{
+            g {
+                stroke:  red !important;
+            }         
+        }
+    }
+}
+
+.react-daterange-picker__calendar-button:enabled {
+    position: absolute;
+    right: 5px;
+    &:hover, &:focus {
+        svg {
+            rect {
+                stroke: #00b3bb !important;
+            }
+            g {
+                stroke: #00b3bb !important;
+            }
+        }
+    }
+    
+}
+
+.react-daterange-picker__inputGroup__input {
+    color: #495057 !important;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.react-calendar__tile--hasActive {
+    background: transparent;
+    border: 1px solid #00b3bb !important;
+}

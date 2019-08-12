@@ -1,0 +1,27 @@
+.cropperBlock {
+
+
+  text-align: center;
+
+  input {
+    display: none !important;
+  }
+
+  .preview-img {
+    img {
+      border-radius: 50%;
+      box-shadow: 0 2px 10px rgba(73, 73, 73, 0.47);
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+
+}
+
+.cropper-face {
+  border-radius: 50%;
+  opacity: .2;
+}

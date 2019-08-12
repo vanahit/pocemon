@@ -1,0 +1,86 @@
+
+%right-border {
+    border-radius:   0 5px 5px 0 !important;
+}
+%left-border {
+    border-radius:   5px 0 0 5px !important;
+}
+%text-align {
+    line-height: 20px;
+}
+@mixin placeholder {
+    ::-webkit-input-placeholder {@content}
+    :-moz-placeholder           {@content}
+    ::-moz-placeholder          {@content}
+    :-ms-input-placeholder      {@content}
+}
+.form-group {
+    margin-bottom:10px !important;
+}
+.form-control-input {
+    margin: 0 10px;
+}
+.append {
+    input, textarea  {
+        @extend %left-border;
+    }
+    .input-group-text {
+        @extend %right-border;
+    }
+}
+.prepend {
+    input, textarea {
+        @extend %right-border;
+    }
+    .input-group-text {
+        @extend  %left-border;
+    }
+
+}
+
+.input-style {
+    border: 1px solid #656565 !important;
+    background-color: white !important;
+}
+.input-right-border {
+    border-radius:  0 5px 5px 0 !important;
+}
+
+.input-border {
+    border-radius: 5px !important;
+}
+
+.error-message {
+    color: #c82333 !important;
+}
+
+.form-control-input {
+    margin: 0;
+}
+
+label {
+    //display: block !important;
+    margin: 10px;
+    font-weight: 400 !important;
+}
+
+label[required]::after {
+    color: #c82333 !important;
+    content: ' *' !important;
+    display:inline !important;
+}
+
+.invalid-input {
+   border-color: rgba(200, 35, 51, 0.7) !important;
+   @include placeholder {
+        color: rgba(200, 35, 51, 0.7) !important;
+   }
+}
+
+select.form-control:not([size]):not([multiple]) {
+    height: calc(2.8rem + 3px) !important;
+}
+.form-control {
+    padding:  0 1rem !important;
+}
+

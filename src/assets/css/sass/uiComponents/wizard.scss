@@ -1,0 +1,52 @@
+.my-wizard {
+
+  .card-title {
+    display: none;
+  }
+
+  .card-header {
+    background-color: #fff;
+  }
+
+  .description {
+    display: none;
+  }
+
+  .wizard-navigation {
+
+    .nav-pills {
+      background-color: #00C4CC;
+      border-radius: 25px;
+
+      .nav-item {
+        margin-left: 0;
+        color: red;
+
+        a {
+          margin-right: 0;
+          color: white;
+
+        }
+
+        .active {
+          color: green !important;
+        }
+
+        .nav-link {
+          color: white;
+        }
+
+        .nav-link:hover {
+          cursor: pointer;
+        }
+
+      }
+    }
+
+    .moving-tab {
+      box-shadow: 0 1px 15px 1px rgba(39, 39, 39, 0.3);
+      color: #00C4CC;
+    }
+  }
+
+}

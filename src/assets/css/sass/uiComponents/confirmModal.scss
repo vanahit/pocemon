@@ -1,0 +1,104 @@
+
+
+.cancel, .confirm {
+  font-size: 16px !important;
+}
+
+.cancel:hover {
+
+}
+
+.modal-body {
+  font-size: 18px !important;
+  text-align: left !important;
+}
+
+.modal-dialog {
+  display: flex !important;
+  justify-content: space-around !important;
+  text-align: center !important;
+  .modal-content {
+    width: 98vw !important;
+  }
+}
+
+button {
+  border-radius: 5px !important;
+}
+
+.modal-lg {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-around !important;
+  @media only screen and (min-width: 576px) {
+    max-width: 98% !important;;
+  }
+}
+.modal-md {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-around !important;
+
+  @media only screen and (min-width: 576px) {
+    max-width: 70% !important;
+  }
+
+  @media only screen and (max-width: 575px) {
+    width: 90% !important;
+  }
+}
+.modal-header {
+  button {
+     font-size: 18px !important;
+  }
+  .close {
+    padding: 0 !important;
+  }
+}
+.filds-mapping {
+  display: flex !important;
+  justify-content: space-around !important;
+  text-align: left !important;
+  margin: 0 !important;
+  padding-top: 1.75rem;
+  padding-left: 50%;
+  transform: translateX(-50%);
+  box-shadow: none !important;
+  @media only screen and (max-width: 979px) {
+    max-width: 100vw !important;
+    padding-left: 0;
+  }
+    .modal-body {
+      max-height: 88vh !important;
+      overflow-y: auto !important;
+      overflow-x: hidden !important;
+    }
+
+  .modal-content {
+    min-width: 70vw !important;
+    @media only screen and (max-width: 1400px) {
+      min-width: 95vw !important;
+      padding: 0 10px 0 10px !important;
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 7px !important;
+    height: 7px !important;
+  }
+}
+
+.template {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 100vw !important;
+
+  .modal-body {
+    padding: 0 !important;
+    height: 90vh !important;
+    overflow-y: auto !important;
+    overflow-x: scroll !important;
+  }
+}
+

@@ -1,0 +1,84 @@
+div.ReactTags__tags {
+  position: relative;
+  width: 100%;
+}
+
+/* Styles for the input */
+div.ReactTags__tagInput {
+  border-radius: 2px;
+  display: inline-block;
+  margin: 0 10px;
+  flex: 1;
+}
+div.ReactTags__tagInput input.ReactTags__tagInputField,
+div.ReactTags__tagInput input.ReactTags__tagInputField:focus {
+  height: 31px;
+  margin: 0;
+  font-size: 12px;
+  width: 100%;
+  padding-left: 10px;
+  //border: 1px solid #ebedf2;
+  border:none;
+  outline: none;
+}
+
+.ReactTags__tags {
+  .ReactTags__selected {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .react-tags-wrapper {
+    width: 100%;
+  }
+}
+
+
+/* Styles for selected tags */
+div.ReactTags__selected span.ReactTags__tag {
+  //border: 1px solid #ddd;
+  background: #1dc9b7;
+  font-size: 12px;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 2px;
+  color:#fff;
+  box-shadow: 0 3px 11px rgba(20, 20, 20, 0.07);
+}
+div.ReactTags__selected a.ReactTags__remove {
+  color: #187868;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+/* Styles for suggestions */
+div.ReactTags__suggestions {
+  position: absolute;
+  z-index: 555;
+}
+div.ReactTags__suggestions ul {
+  list-style-type: none;
+  box-shadow: .05em .01em .5em rgba(0,0,0,.2);
+  background: white;
+  flex: 200px;
+}
+div.ReactTags__suggestions li {
+  border-bottom: 1px solid #ddd;
+  padding: 5px 10px;
+  margin: 0;
+}
+div.ReactTags__suggestions li mark {
+  text-decoration: underline;
+  background: none;
+  font-weight: 600;
+}
+div.ReactTags__suggestions ul li.ReactTags__activeSuggestion {
+  background: #b7cfe0;
+  cursor: pointer;
+}
+
+div[class*='MuiChip-root-'] {
+  height: 26px;
+}

@@ -1,0 +1,61 @@
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+%spinner {
+  content: '';
+  box-sizing: border-box;
+  top: 50%;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 2px solid #FFFFFF;
+  border-top-color: #c4c4c4;
+  animation: spinner .6s linear infinite;
+}
+
+.myBtn {
+  position: relative;
+  display: inline-flex !important;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px !important;
+
+  &.hasIcon {
+    padding-left: 10px;
+
+    .btn-icon {
+      font-size: 1.1rem;
+      display: block;
+      width: 30px;
+
+    }
+
+    .customIcon {
+      width: 30px;
+      display: block;
+      font-size: 18px;
+      padding: 5px;
+      margin-right: 5px;
+
+      & > * {
+        max-width: 100%;
+        //font-size: inherit;
+      }
+    }
+  }
+
+  &.isLoading {
+    right: 0;
+    pointer-events: none;
+
+    &::before {
+      @extend %spinner
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@import "~react-datepicker/dist/react-datepicker.min.css";
+
+.app-datepicker {
+  .react-datepicker {
+    box-shadow: 0 2px 10px rgba(128, 128, 128, 0.23);
+    border: none;
+    .react-datepicker__current-month {
+      color: #00b3bb !important;
+    }
+    .react-datepicker__day--today {
+      background: #cacaca;
+      font-weight: 700;
+    }
+    .react-datepicker__day--selected {
+      background: #00b3bb;
+    }
+  }
+}
